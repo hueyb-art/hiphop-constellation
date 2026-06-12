@@ -158,7 +158,7 @@
 
 <div class="topbar">
   <div class="brand">
-    <h1>The Hip Hop Constellation <span class="ver">v2</span></h1>
+    <h1>The Hip Hop Constellation <span class="ver">v3</span></h1>
     <div class="tag">An encyclopedia of who shaped whom</div>
   </div>
   <button class="rr" id="rrBtn">Reading room</button>
@@ -186,6 +186,7 @@ const ERAS={
   y2k:{label:"2000s",color:"#a07ff0"},
   blogera:{label:"Blog & streaming era",color:"#ec6aa0"},
   contemporary:{label:"Contemporary",color:"#46c8d0"},
+  uk:{label:"UK: grime & drill",color:"#e85a5a"},
 };
 function n(id,name,era,role,life,blurb,bio,disco){return{id,name,era,role,life,blurb,bio,disco};}
 const NODES=[
@@ -395,9 +396,9 @@ n("polog","Polo G","contemporary","MC","b.1999 · American","Melodic Chicago voi
 n("jackharlow","Jack Harlow","contemporary","MC","b.1998 · American","Louisville crossover.","A charismatic pop-rap star of the early 2020s.",[["2022","Come Home the Kids Miss You",""]]),
 n("gunna","Gunna","contemporary","MC","b.1993 · American","Melodic trap stylist.","A YSL star whose smooth, designer-draped trap topped charts.",[["2022","DS4Ever",""]]),
 n("lilnasx","Lil Nas X","contemporary","MC · vocals","b.1999 · American","The viral phenomenon.","The 'Old Town Road' star who shattered chart records and provoked the culture.",[["2021","Montero",""]]),
-n("centralcee","Central Cee","contemporary","MC","b.1998 · British","UK drill crossover.","London's biggest rap export of the 2020s.",[["2023","Split Decision",""]]),
-n("stormzy","Stormzy","contemporary","MC","b.1993 · British","Grime's headliner.","The London star who took grime to Glastonbury headline status.",[["2019","Heavy Is the Head",""]]),
-n("dave","Dave","contemporary","MC","b.1998 · British","UK rap's laureate.","The South London lyricist whose 'Psychodrama' won the Mercury Prize.",[["2019","Psychodrama",""]]),
+n("centralcee","Central Cee","uk","MC","b.1998 · British","UK drill crossover.","London's biggest rap export of the 2020s.",[["2023","Split Decision",""]]),
+n("stormzy","Stormzy","uk","MC","b.1993 · British","Grime's headliner.","The London star who took grime to Glastonbury headline status.",[["2019","Heavy Is the Head",""]]),
+n("dave","Dave","uk","MC","b.1998 · British","UK rap's laureate.","The South London lyricist whose 'Psychodrama' won the Mercury Prize.",[["2019","Psychodrama",""]]),
 n("icespice","Ice Spice","contemporary","MC","b.2000 · American","Bronx drill 'it' girl.","A breakout star of early-2020s viral rap.",[["2023","Like..? (Deluxe)",""]]),
 n("glorilla","GloRilla","contemporary","MC","b.1999 · American","Memphis breakout.","A raw, charismatic voice reviving Memphis rap energy.",[["2024","Glorious",""]]),
 n("latto","Latto","contemporary","MC","b.1998 · American","Atlanta's young star.","A competition-show winner turned Grammy-nominated hitmaker.",[["2022","777",""]]),
@@ -416,17 +417,17 @@ n("youngma","Young M.A","blogera","MC","b.1992 · American","'OOOUUU' breakout."
 n("noname","Noname","blogera","MC","b.1991 · American","Chicago's poet.","A Chicago spoken-word-bred rapper of literary, jazzy introspection.",[["2016","Telefone",""]]),
 n("saweetie","Saweetie","contemporary","MC","b.1993 · American","Icy pop-rap star.","A Bay Area hitmaker of glossy, hook-driven rap.",[["2018","Icy",""]]),
 n("doechii","Doechii","contemporary","MC","b.1998 · American","The Swamp Princess.","A TDE star whose 2024 'Alligator Bites Never Heal' won the Best Rap Album Grammy — the third woman ever to do so.",[["2024","Alligator Bites Never Heal",""]]),
-n("stefflondon","Stefflon Don","contemporary","MC","b.1991 · British","UK rap's crossover queen.","A British-Jamaican star bridging UK rap, dancehall and US features.",[["2018","Secure",""]]),
-n("dizzeerascal","Dizzee Rascal","y2k","MC","b.1984 · British","Grime's breakout genius.","The East London prodigy whose 2003 'Boy in da Corner' won the Mercury Prize and announced grime to the world.",[["2003","Boy in da Corner",""]]),
-n("wiley","Wiley","y2k","MC · producer","b.1979 · British","The Godfather of Grime.","The Roll Deep founder and Eskibeat pioneer who built the grime sound and scene.",[["2004","Treddin' on Thin Ice",""]]),
-n("kano","Kano","y2k","MC","b.1985 · British","Grime's lyrical great.","An East London pioneer ('Home Sweet Home') and one of grime's most revered lyricists and actors.",[["2005","Home Sweet Home",""]]),
-n("giggs","Giggs","y2k","MC","b.1983 · British","UK road-rap don.","A South London pioneer of UK 'road rap' whose deep voice influenced a generation.",[["2010","Let Em Ave It",""]]),
-n("ghetts","Ghetts","y2k","MC","b.1984 · British","Grime's intense craftsman.","An East London lyricist revered for ferocious technique and storytelling.",[["2021","Conflict of Interest",""]]),
-n("skepta","Skepta","blogera","MC · producer","b.1982 · British","Grime's global ambassador.","A Boy Better Know leader whose 2016 'Konnichiwa' won the Mercury and took grime worldwide.",[["2016","Konnichiwa",""]]),
-n("jme","JME","blogera","MC","b.1985 · British","BBK's independent voice.","Skepta's brother and Boy Better Know co-founder, a fiercely independent grime figure.",[["2015","Integrity>",""]]),
-n("littlesimz","Little Simz","blogera","MC","b.1994 · British","The lyrical auteur.","A North London rapper whose 2021 'Sometimes I Might Be Introvert' won the Mercury Prize and wide acclaim.",[["2021","Sometimes I Might Be Introvert",""]]),
-n("ajtracey","AJ Tracey","blogera","MC","b.1994 · British","UK rap-grime hitmaker.","A West London star bridging grime, drill and chart hits ('Ladbroke Grove').",[["2019","AJ Tracey",""]]),
-n("headieone","Headie One","contemporary","MC","b.1994 · British","UK drill's leader.","A Tottenham rapper who took UK drill to No. 1 and the mainstream.",[["2020","Edna",""]]),
+n("stefflondon","Stefflon Don","uk","MC","b.1991 · British","UK rap's crossover queen.","A British-Jamaican star bridging UK rap, dancehall and US features.",[["2018","Secure",""]]),
+n("dizzeerascal","Dizzee Rascal","uk","MC","b.1984 · British","Grime's breakout genius.","The East London prodigy whose 2003 'Boy in da Corner' won the Mercury Prize and announced grime to the world.",[["2003","Boy in da Corner",""]]),
+n("wiley","Wiley","uk","MC · producer","b.1979 · British","The Godfather of Grime.","The Roll Deep founder and Eskibeat pioneer who built the grime sound and scene.",[["2004","Treddin' on Thin Ice",""]]),
+n("kano","Kano","uk","MC","b.1985 · British","Grime's lyrical great.","An East London pioneer ('Home Sweet Home') and one of grime's most revered lyricists and actors.",[["2005","Home Sweet Home",""]]),
+n("giggs","Giggs","uk","MC","b.1983 · British","UK road-rap don.","A South London pioneer of UK 'road rap' whose deep voice influenced a generation.",[["2010","Let Em Ave It",""]]),
+n("ghetts","Ghetts","uk","MC","b.1984 · British","Grime's intense craftsman.","An East London lyricist revered for ferocious technique and storytelling.",[["2021","Conflict of Interest",""]]),
+n("skepta","Skepta","uk","MC · producer","b.1982 · British","Grime's global ambassador.","A Boy Better Know leader whose 2016 'Konnichiwa' won the Mercury and took grime worldwide.",[["2016","Konnichiwa",""]]),
+n("jme","JME","uk","MC","b.1985 · British","BBK's independent voice.","Skepta's brother and Boy Better Know co-founder, a fiercely independent grime figure.",[["2015","Integrity>",""]]),
+n("littlesimz","Little Simz","uk","MC","b.1994 · British","The lyrical auteur.","A North London rapper whose 2021 'Sometimes I Might Be Introvert' won the Mercury Prize and wide acclaim.",[["2021","Sometimes I Might Be Introvert",""]]),
+n("ajtracey","AJ Tracey","uk","MC","b.1994 · British","UK rap-grime hitmaker.","A West London star bridging grime, drill and chart hits ('Ladbroke Grove').",[["2019","AJ Tracey",""]]),
+n("headieone","Headie One","uk","MC","b.1994 · British","UK drill's leader.","A Tottenham rapper who took UK drill to No. 1 and the mainstream.",[["2020","Edna",""]]),
 n("kingvon","King Von","contemporary","MC","1994–2020 · American","Chicago drill's storyteller.","An OTF rapper and vivid street narrator whose rise was cut short by his murder at 26.",[["2020","Welcome to O'Block",""]]),
 n("fiviforeign","Fivio Foreign","contemporary","MC","b.1990 · American","Brooklyn drill's voice.","A booming Brooklyn drill star who carried the sound after Pop Smoke.",[["2022","B.I.B.L.E.",""]]),
 ];
